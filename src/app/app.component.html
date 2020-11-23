@@ -1,17 +1,20 @@
-<!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
-	<a class="navbar-brand" href="#">
-		<img src="https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    TÍTULO DA APLICAÇÃO
-  </a>
-</nav>
+<!-- Header -->
+<div class="pb-2">
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<img src="https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      TÍTULO DA APLICAÇÃO
+    </a>
+	</nav>
+</div>
 
 <div class="card-deck">
 	<card-categoria [nomeCategoria]="'Alimentício'"
 		[imgSrc]="'https://erivan.com.br/wp-content/uploads/2019/08/3856.jpg'">
 	</card-categoria>
 
-	<card-categoria [nomeCategoria]="'Eletrodomésticos'">
+	<card-categoria [nomeCategoria]="'Eletrodomésticos'"
+		[imgSrc]="'https://www.papodegordo.com.br/wp-content/uploads/2019/07/Magodecasa.png'">
 	</card-categoria>
 
 	<card-categoria [nomeCategoria]="'Feira'">
