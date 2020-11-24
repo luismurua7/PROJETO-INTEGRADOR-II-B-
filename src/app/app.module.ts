@@ -25,7 +25,9 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule
   ],
   declarations: [AppComponent, CardCategoriaComponent, ProdDescrComponent],
   bootstrap: [AppComponent]

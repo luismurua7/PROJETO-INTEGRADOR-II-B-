@@ -8,8 +8,15 @@
 	</nav>
 </div>
 
+
 <div class="card-deck pl-2">
-	<card-categoria [nomeCategoria]="'Alimentício'"
+	<ul>
+		<li class="text" *ngFor="let item of items | async">
+			{{item.name}}
+		</li>
+	</ul>
+	<!--
+  <card-categoria [nomeCategoria]="'Alimentício'"
 		[imgSrc]="'https://erivan.com.br/wp-content/uploads/2019/08/3856.jpg'">
 	</card-categoria>
 
@@ -32,7 +39,10 @@
 	<card-categoria [nomeCategoria]="'Higiene Pessoal'"
 		[imgSrc]="'https://cdn.consumidormoderno.com.br/wp-content/uploads/2019/03/cosm%C3%A9ticos-e-higiene-pessoal-editado.jpg'">
 	</card-categoria>
+  -->
 </div>
+
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/8.1.1/firebase-app.js"></script>
 
