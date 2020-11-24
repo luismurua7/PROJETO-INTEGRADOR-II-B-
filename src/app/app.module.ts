@@ -4,13 +4,6 @@ import { FormsModule } from "@angular/forms";
 import { Routes } from "@angular/router";
 import { AppComponent } from "./app.component";
 
-//firebase
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
-import { AngularFirestoreModule } from "@angular/fire/firestore";
-import { environment } from "./environments/environment";
-//fimfirebase
-
 //pages
 import { ProdDescrComponent } from "./pages/details/prod-descr/prod-descr.component";
 import { CardCategoriaComponent } from "./pages/inicio/card-categoria/card-categoria.component";
@@ -25,8 +18,6 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
   ],
   declarations: [AppComponent, CardCategoriaComponent, ProdDescrComponent],
   bootstrap: [AppComponent]
