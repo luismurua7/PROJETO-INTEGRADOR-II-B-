@@ -1,33 +1,29 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
-import { Routes } from "@angular/router";
 import { AppComponent } from "./app.component";
 
 //firebase
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
-import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { environment } from "./environments/environment";
 //fimfirebase
 
 //pages
 import { ProdDescrComponent } from "./pages/details/prod-descr/prod-descr.component";
 import { CardCategoriaComponent } from "./components/card-categoria/card-categoria.component";
+import { ListaCategoriasComponent } from "./pages/lista-categorias/lista-categorias.component";
+import { AppRoutingModule } from "./app-routing.module";
+import { HeaderComponent } from "./components/header/header.component";
 //fimpages
 
-const routes: Routes = [
-  { path: "", component: CardCategoriaComponent }, // inicio
-  { path: "details", component: ProdDescrComponent } // produto
-];
-
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AngularFireModule.initializeApp(environment.firebase)
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    CardCategoriaComponent,
+    ProdDescrComponent,
+    ListaCategoriasComponent,
+    HeaderComponent
   ],
-  declarations: [AppComponent, CardCategoriaComponent, ProdDescrComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
