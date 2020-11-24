@@ -8,6 +8,7 @@ import { CardCategoriaComponent } from "./components/card-categoria/card-categor
 import { ListaCategoriasComponent } from "./pages/lista-categorias/lista-categorias.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { HeaderComponent } from "./components/header/header.component";
+import { CadastroProdutoComponent } from "./pages/cadastro-produto/cadastro-produto.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -16,7 +17,8 @@ import { HeaderComponent } from "./components/header/header.component";
     CardCategoriaComponent,
     ProdDescrComponent,
     ListaCategoriasComponent,
-    HeaderComponent
+    HeaderComponent,
+    CadastroProdutoComponent
   ],
   bootstrap: [AppComponent]
 })
