@@ -13,7 +13,7 @@ import { environment } from "./environments/environment";
 
 //pages
 import { ProdDescrComponent } from "./pages/details/prod-descr/prod-descr.component";
-import { CardCategoriaComponent } from "./pages/inicio/card-categoria/card-categoria.component";
+import { CardCategoriaComponent } from "./components/card-categoria/card-categoria.component";
 //fimpages
 
 const routes: Routes = [
