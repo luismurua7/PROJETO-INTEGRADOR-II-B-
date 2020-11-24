@@ -4,7 +4,7 @@ import { ProdDescrComponent } from "./pages/details/prod-descr/prod-descr.compon
 import { ListaCategoriasComponent } from "./pages/lista-categorias/lista-categorias.component";
 
 const routes: Routes = [
-  { path: "home", component: ListaCategoriasComponent }, // inicio
+  { path: "", component: ListaCategoriasComponent }, // inicio
   { path: "details", component: ProdDescrComponent } // produto
 ];
 
