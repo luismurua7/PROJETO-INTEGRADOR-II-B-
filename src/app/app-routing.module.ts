@@ -6,7 +6,7 @@ import { ListaProdutosComponent } from "./pages/lista-produtos/lista-produtos.co
 
 const routes: Routes = [
   { path: "", component: ListaCategoriasComponent },
-  { path: "details", component: ListaProdutosComponent },
+  { path: "produtos", component: ListaProdutosComponent },
   { path: "cadastro", component: CadastroProdutoComponent }
 ];
 
