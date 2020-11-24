@@ -1,8 +1,11 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import { AngularFireModule } from "@angular/fire";
 import { FormsModule } from "@angular/forms";
-import { AppComponent } from "./app.component";
 import { Routes } from "@angular/router";
+
+import { environment } from "./environments/environment";
+import { AppComponent } from "./app.component";
 import { ProdDescrComponent } from "./pages/details/prod-descr/prod-descr.component";
 import { CardCategoriaComponent } from "./pages/inicio/card-categoria/card-categoria.component";
 
