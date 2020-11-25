@@ -9,4 +9,5 @@ export class ProdDescrComponent {
   @Input() public nomeProduto: string;
   @Input() public imgSrc: string;
   @Input() public descricao: string;
+  @Input() public preco: string;
 }
