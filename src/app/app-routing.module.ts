@@ -4,12 +4,14 @@ import { CadastroProdutoComponent } from "./pages/cadastro-produto/cadastro-prod
 import { DefinirPromocoesComponent } from "./pages/definir-promocao/definir-promocao.component";
 import { ListaCategoriasComponent } from "./pages/lista-categorias/lista-categorias.component";
 import { ListaProdutosComponent } from "./pages/lista-produtos/lista-produtos.component";
+import { LoginComponent } from "./pages/login/login.component";
 
 const routes: Routes = [
   { path: "", component: ListaCategoriasComponent },
   { path: "produtos", component: ListaProdutosComponent },
   { path: "cadastro", component: CadastroProdutoComponent },
-  { path: "promocao", component: DefinirPromocoesComponent }
+  { path: "promocao", component: DefinirPromocoesComponent },
+  { path: "login", component: LoginComponent }
 ];
 
 @NgModule({

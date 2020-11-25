@@ -12,6 +12,7 @@ import { CadastroProdutoComponent } from "./pages/cadastro-produto/cadastro-prod
 import { ProdDescrComponent } from "./components/prod-descr/prod-descr.component";
 import { ListaProdutosComponent } from "./pages/lista-produtos/lista-produtos.component";
 import { DefinirPromocoesComponent } from "./pages/definir-promocao/definir-promocao.component";
+import { LoginComponent } from "./pages/login/login.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -23,7 +24,8 @@ import { DefinirPromocoesComponent } from "./pages/definir-promocao/definir-prom
     HeaderComponent,
     CadastroProdutoComponent,
     ListaProdutosComponent,
-    DefinirPromocoesComponent
+    DefinirPromocoesComponent,
+    LoginComponent
   ],
   bootstrap: [AppComponent]
 })
