@@ -7,9 +7,11 @@ import { CardCategoriaComponent } from "./components/card-categoria/card-categor
 import { ListaCategoriasComponent } from "./pages/lista-categorias/lista-categorias.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { HeaderComponent } from "./components/header/header.component";
+
 import { CadastroProdutoComponent } from "./pages/cadastro-produto/cadastro-produto.component";
 import { ProdDescrComponent } from "./components/prod-descr/prod-descr.component";
 import { ListaProdutosComponent } from "./pages/lista-produtos/lista-produtos.component";
+import { ProdListComponent } from "./components/prod-list/prod-list.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
@@ -20,7 +22,8 @@ import { ListaProdutosComponent } from "./pages/lista-produtos/lista-produtos.co
     ListaCategoriasComponent,
     HeaderComponent,
     CadastroProdutoComponent,
-    ListaProdutosComponent
+    ListaProdutosComponent,
+    ProdListComponent
   ],
   bootstrap: [AppComponent]
 })
