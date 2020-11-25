@@ -10,4 +10,5 @@ export class ProdDescrComponent {
   @Input() public imgSrc: string;
   @Input() public descricao: string;
   @Input() public preco: string;
+  @Input() public local: string;
 }
